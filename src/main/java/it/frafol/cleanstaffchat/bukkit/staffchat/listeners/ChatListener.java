@@ -170,7 +170,8 @@ public class ChatListener extends ListenerAdapter implements Listener {
 
                 embed.setColor(Color.getColor(SpigotDiscordConfig.EMBEDS_COLOR.get(String.class)));
                 embed.setFooter(SpigotDiscordConfig.EMBEDS_FOOTER.get(String.class), null);
-
+                embed.setAuthor("https://crafthead.net/avatar/_lygh_");
+                
                 channel.sendMessageEmbeds(embed.build()).queue();
 
             } else {
